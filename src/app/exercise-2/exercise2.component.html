@@ -1,0 +1,22 @@
+<h3>Simple Calculator:</h3>
+<label>Type a Number:</label>
+<input type="text" [(ngModel)]="currentVal" />
+<button (click)="add(currentVal)">&crarr;</button>
+<button (click)="reset()">Reset</button>
+<div>
+  <label>Operation selected:</label>
+  <button (click)="sum()" [ngClass]="{'selected': this.operation === '+'}">
+    Sum
+  </button>
+  <button (click)="subs()" [ngClass]="{'selected': this.operation === '-'}">
+    Subs
+  </button>
+  <button (click)="mul()" [ngClass]="{'selected': this.operation === '*'}">
+    Mul
+  </button>
+  <button (click)="div()" [ngClass]="{'selected': this.operation === '/'}">
+    Div
+  </button>
+</div>
+<label>Total:</label>
+<input type="text" [value]="total" />

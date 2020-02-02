@@ -1,0 +1,7 @@
+label {
+  display: block;
+}
+
+.selected {
+  background-color: #b8e1ff;
+}
