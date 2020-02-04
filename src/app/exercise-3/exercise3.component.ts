@@ -5,4 +5,13 @@ import { Component } from "@angular/core";
   templateUrl: "./exercise3.component.html",
   styleUrls: ["./exercise3.component.css"]
 })
-export class Exercise3Component {}
+export class Exercise3Component {
+  customer: any = {
+    name: "",
+    last_name: "",
+    address: "",
+    city: "",
+    state: "",
+    zip: 45057
+  };
+}

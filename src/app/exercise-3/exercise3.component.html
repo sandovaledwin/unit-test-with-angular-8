@@ -2,13 +2,13 @@
   <mat-card-title>Form</mat-card-title>
   <mat-card-subtitle>With Custom Validation</mat-card-subtitle>
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Name:" />
+    <input matInput placeholder="Name:" [(ngModel)]="customer.name" />
   </mat-form-field>
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Last name:" />
+    <input matInput placeholder="Last name:" [(ngModel)]="customer.last_name" />
   </mat-form-field>
   <mat-form-field class="example-full-width">
-    <textarea matInput placeholder="Address">
+    <textarea matInput placeholder="Address" [(ngModel)]="customer.address">
 Col. Chapalita, Tepeyac #1010
     </textarea>
   </mat-form-field>
@@ -16,12 +16,12 @@ Col. Chapalita, Tepeyac #1010
     <tr>
       <td>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="City" />
+          <input matInput placeholder="City" [(ngModel)]="customer.city" />
         </mat-form-field>
       </td>
       <td>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="State" />
+          <input matInput placeholder="State" [(ngModel)]="customer.state" />
         </mat-form-field>
       </td>
       <td>
@@ -30,7 +30,7 @@ Col. Chapalita, Tepeyac #1010
             matInput
             maxlength="5"
             placeholder="Postal Code"
-            value="45047"
+            [(ngModel)]="customer.zip"
           />
         </mat-form-field>
       </td>
