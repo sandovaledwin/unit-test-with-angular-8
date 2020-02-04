@@ -13,11 +13,13 @@ import { AppComponent } from "./app.component";
 import { Exercise1Component } from "./exercise-1/exercise1.component";
 import { Exercise2Component } from "./exercise-2/exercise2.component";
 import { Exercise3Component } from "./exercise-3/exercise3.component";
+import { Exercise4Component } from "./exercise-4/exercise4.component";
 
 const routes: Routes = [
   { path: "exercise-1", component: Exercise1Component },
   { path: "exercise-2", component: Exercise2Component },
-  { path: "exercise-3", component: Exercise3Component }
+  { path: "exercise-3", component: Exercise3Component },
+  { path: "exercise-4", component: Exercise4Component }
 ];
 
 @NgModule({
@@ -25,7 +27,8 @@ const routes: Routes = [
     AppComponent,
     Exercise1Component,
     Exercise2Component,
-    Exercise3Component
+    Exercise3Component,
+    Exercise4Component
   ],
   imports: [
     BrowserAnimationsModule,
